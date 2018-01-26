@@ -1,0 +1,235 @@
+/*
+
+ Dark Green : #78BD4C
+  Mid Green : #A8FF56
+       Lite : #ECFFE0
+Dark Purple : #A22FB0
+
+*/
+
+html, body {
+    background-color: rgb(196, 30, 1);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ******************************
+              BUTTONS!
+     (Inspired by Bootstrap 3.0)
+   ****************************** */
+
+.btn {
+    display: inline-block;
+    height: 10%;
+    width: 29%;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center;
+    background-color: rgb(42, 54, 54);
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 5px solid transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.btn:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #AE37B2;
+    text-decoration: none;
+}
+
+.btn:active,
+.btn.active {
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.left {
+    float: left;
+    border-radius: 25px;
+}
+
+.right {
+    float: right;
+    border-radius: 25px;
+}
+
+.center {
+    float: center;
+    border-radius: 25px;
+}
+
+
+/* ******************************
+          TITLE SCREEN
+     (intro-screen-template)
+   ****************************** */
+
+#gameArea {
+    height: 100%;
+    width: 100%;
+}
+
+.titleWrapper {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    height: 60%;
+    width: 96%;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.title {
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+}
+
+.titleGameWrapper .info {
+    font-size: 1.5em;
+    color: #ECFFE0;
+    height: 30%;
+    padding-top: 1%;
+}
+
+#playerMatchingMessage {
+    font-size: .8em;
+}
+
+/* ******************************
+          START SCREEN
+     (create-game-template)
+   ****************************** */
+
+.gameOver {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#playerWaitingMessage {
+    font-size: .8em;
+}
+
+
+/* ******************************
+          PLAYER GAME SCREEN
+
+   ****************************** */
+
+#hostWord h2, #btnPlayerRestart h3 {
+    font-size: 161px;
+    line-height: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#playerStats {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.playerHp {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    height: 100%;
+}
+
+.playerHp span {
+    display: inline-block;
+    font-size: 1.4EM;
+    padding: 2%;
+    min-width: 10%;
+    margin: 0;
+}
+
+.playerHp .HP {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(42, 54, 54);
+}
+
+.playerHp .playerName {
+    width: 77%;
+    background-color: rgb(196, 30, 1);
+}
+
+#player1Hp {
+    float: left;
+}
+
+#player2Hp {
+    float: right;
+    text-align: right;
+}
+
+.attack {
+    top: 80%;
+    left: 35%;
+    height: 10%;
+    float: center;
+    position:absolute;
+    border-radius: 25px;
+    transition: .5s ease;
+}
+
+
+/* ******************************
+          TITLE SCREEN
+     (intro-screen-template)
+   ****************************** */
+
+.gameOver {
+    display: block;
+    height: 30%;
+    padding-top: 10%;
+    font-size: 2em;
+    margin-bottom: 20%;
+}
+
+.btnGameOver {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+    bottom: 0;
+}
+
+
